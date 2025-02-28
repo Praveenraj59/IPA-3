@@ -1,0 +1,11 @@
+flask
+numpy
+pandas
+scikit-learn
+tensorflow
+yfinance
+nltk
+transformers
+newsapi-python
+tweepy
+alpha_vantage

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experienced Investor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Experienced Investor</h1>
+        <form action="/investor" method="POST" class="mt-4">
+            <div class="mb-3">
+                <label for="ticker" class="form-label">Stock Ticker:</label>
+                <input type="text" class="form-control" id="ticker" name="ticker" required>
+            </div>
+            <div class="mb-3">
+                <label for="risk_tolerance" class="form-label">Risk Tolerance:</label>
+                <select class="form-select" id="risk_tolerance" name="risk_tolerance" required>
+                    <option value="Conservative">Conservative</option>
+                    <option value="Moderate">Moderate</option>
+                    <option value="Aggressive">Aggressive</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="current_allocation" class="form-label">Current Allocation (%):</label>
+                <input type="number" class="form-control" id="current_allocation" name="current_allocation" required>
+            </div>
+            <div class="mb-3">
+                <label for="investment_horizon" class="form-label">Investment Horizon:</label>
+                <select class="form-select" id="investment_horizon" name="investment_horizon" required>
+                    <option value="short_term">Less than 1 year</option>
+                    <option value="medium_term">1-5 years</option>
+                    <option value="long_term">More than 5 years</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="rebalance_frequency" class="form-label">Rebalance Frequency:</label>
+                <select class="form-select" id="rebalance_frequency" name="rebalance_frequency" required>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="annually">Annually</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
